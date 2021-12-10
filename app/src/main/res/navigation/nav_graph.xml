@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/addCourse"
+        android:name="com.example.pdponline.fragments.AddCourse"
+        android:label="fragment_add_course"
+        tools:layout="@layout/fragment_add_course" >
+        <action
+            android:id="@+id/action_addCourse_to_editCourse"
+            app:destination="@id/editCourse" />
+        <action
+            android:id="@+id/action_addCourse_to_addModul"
+            app:destination="@id/addModul" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLesson"
+        android:name="com.example.pdponline.fragments.AddLesson"
+        android:label="fragment_add_lesson"
+        tools:layout="@layout/fragment_add_lesson" >
+        <action
+            android:id="@+id/action_addLesson_to_editLesson"
+            app:destination="@id/editLesson" />
+    </fragment>
+    <fragment
+        android:id="@+id/addModul"
+        android:name="com.example.pdponline.fragments.AddModul"
+        android:label="fragment_add_modul"
+        tools:layout="@layout/fragment_add_modul" >
+        <action
+            android:id="@+id/action_addModul_to_editModul"
+            app:destination="@id/editModul" />
+        <action
+            android:id="@+id/action_addModul_to_addLesson"
+            app:destination="@id/addLesson" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCourse"
+        android:name="com.example.pdponline.fragments.EditCourse"
+        android:label="fragment_edit_course"
+        tools:layout="@layout/fragment_edit_course" />
+    <fragment
+        android:id="@+id/courseModuls"
+        android:name="com.example.pdponline.fragments.CourseModuls"
+        android:label="fragment_course_moduls"
+        tools:layout="@layout/fragment_course_moduls" >
+        <action
+            android:id="@+id/action_courseModuls_to_modulLessons"
+            app:destination="@id/modulLessons" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLesson"
+        android:name="com.example.pdponline.fragments.EditLesson"
+        android:label="fragment_edit_lesson"
+        tools:layout="@layout/fragment_edit_lesson" />
+    <fragment
+        android:id="@+id/editModul"
+        android:name="com.example.pdponline.fragments.EditModul"
+        android:label="fragment_edit_modul"
+        tools:layout="@layout/fragment_edit_modul" />
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.pdponline.fragments.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_addCourse"
+            app:destination="@id/addCourse" />
+        <action
+            android:id="@+id/action_homeScreen_to_courseModuls"
+            app:destination="@id/courseModuls" />
+        <action
+            android:id="@+id/action_homeScreen_to_modulLessons"
+            app:destination="@id/modulLessons" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonData"
+        android:name="com.example.pdponline.fragments.LessonData"
+        android:label="fragment_lesson_data"
+        tools:layout="@layout/fragment_lesson_data" />
+    <fragment
+        android:id="@+id/modulLessons"
+        android:name="com.example.pdponline.fragments.ModulLessons"
+        android:label="fragment_modul_lessons"
+        tools:layout="@layout/fragment_modul_lessons" >
+        <action
+            android:id="@+id/action_modulLessons_to_lessonData"
+            app:destination="@id/lessonData" />
+    </fragment>
+</navigation>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditCourse">
+
+    <TextView
+        android:id="@+id/name_of_course"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="33dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/roboto_regular"
+        android:singleLine="true"
+        android:text="Android development"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/placeholder_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edit_picture"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="186dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Put another picture on the course"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="233dp"
+        android:background="@drawable/item_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="10dp"
+            android:text="Android development"
+            android:textColor="@color/black"
+            android:textColorHint="#A09C9C"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <com.dagang.library.GradientButton
+        android:id="@+id/shadow_btn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="26dp"
+        app:button_end_color="#B294F3"
+        app:button_gradient_orientation="TOP_BOTTOM"
+        app:button_is_shadowed="true"
+        app:button_radius="45dp"
+        app:button_shadow_angle="90"
+        app:button_shadow_color="#B496F4"
+        app:button_shadow_distance="5dp"
+        app:button_shadow_radius="10dp"
+        app:button_start_color="#E8E1FB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/edit_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:padding="10dp"
+            android:src="@drawable/ic_checked_1" />
+    </com.dagang.library.GradientButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

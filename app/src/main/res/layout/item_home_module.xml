@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dagang.library.GradientButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/module_btn"
+    android:layout_width="127dp"
+    android:layout_height="80dp"
+    app:button_end_color="#FED589"
+    app:button_gradient_orientation="LEFT_RIGHT"
+    app:button_is_shadowed="true"
+    app:button_radius="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    app:button_shadow_angle="90"
+    app:button_shadow_color="#F9DBA1"
+    app:button_shadow_distance="3dp"
+    android:layout_marginBottom="10dp"
+    app:button_shadow_radius="6dp"
+    app:button_start_color="#F4B63C">
+
+    <TextView
+        android:id="@+id/module_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kotlin Basic"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+</com.dagang.library.GradientButton>
